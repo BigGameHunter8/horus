@@ -1,0 +1,148 @@
+@active: #c65046;
+@form_input:#919090;
+@text: #2f3939;
+@main-font: 'Raleway', sans-serif;
+@border: #e8e8e8;
+
+
+.active_form_input{
+    border:1px solid @active;
+    color:#4b5353;
+}
+
+#active_form_input{
+    border:1px solid @active;
+    color:#4b5353;
+}
+
+.wrapper .lang .active{
+    color:@active;
+}
+
+
+.wrapper{
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+
+    .lang{
+        padding-top: 100px;
+        padding-bottom: 25px;
+
+        ul{
+            list-style: none;
+            margin-left: 30px;
+
+            li{
+                float: left;
+                text-decoration: none;
+                padding-left: 30px;
+
+                a{
+
+                   color: @text;
+                   font-size: 14px; 
+                   font-family: @main-font;
+                   font-weight: 600;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+            
+        }
+    }
+
+    .shadow{
+        width: 945px;
+        height: 670px;
+        color:white;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 15.84px 0.16px rgba(0, 0, 0, 0.32);
+
+        .logo{
+            padding-top: 75px;
+        }
+
+        .head{
+            font-size: 24px;
+            font-family: @main-font;
+            color:@text;
+            padding-left: 60px;
+            padding-top: 32px;
+            font-weight: 600;
+        }
+
+        input{
+            width: 380px;
+            height: 38px;
+            padding-top: 30px;
+            font-family: @main-font;
+            font-size: 14px;
+            font-weight: normal;
+            color: @text;
+            border:1px solid @border;
+        }
+
+        input[placeholder]{
+            color:grey; 
+            padding:10px;
+        }
+
+        .name{
+            margin-left: 67px;
+            margin-right: 30px;
+            margin-bottom: 27px;
+            margin-top: 27px;
+        }
+
+        .email{
+            margin-left: 67px;
+            margin-right: 30px;
+        }
+
+        .second{
+            margin-top: -15px;
+        }
+        
+        .s_phone{
+            margin-bottom: 75px;
+        }
+
+        .sub{
+            border:1px solid @active;
+            color:@active;
+            font-weight: bold;
+            padding: 10px 25px;
+            margin-top: -40px;
+        }
+
+        .error{
+            text-align: center;
+            color:@active;
+            font-family: @main-font;
+            font-weight: bold;
+            padding-top: 15px;
+            font-size: 16px;
+        }
+    }
+
+    .footer{
+        margin-top: 35px;
+
+        p{
+            margin-left: 100px;
+            font-family: @main-font;
+            color: @text;
+            font-weight: 600;
+        }
+
+        img{
+            display: inline-block;
+            margin-left: 15px;
+        }
+    }
+}
+
+  
