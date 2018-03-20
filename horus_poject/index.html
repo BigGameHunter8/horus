@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -42,11 +42,11 @@
                     </div>
                 </div>
 
-                <form action="#" method="post" onsubmit="validate();">
+                <form action="#" method="post" id="form">
                     <h1 class="head">Контактные данные заявителя</h1>
-                    <input type="text" placeholder="Имя" class="name active_form_input" id="active_form_input" name="f_name">
-                    <input type="text" placeholder="Фамилия" class="surname" name="f_surname">
-                    <input type="text" placeholder="E-mail" class="email" name="f_email">
+                    <input type="text" placeholder="Имя" class="name active_form_input" id="active_form_input" name="f_name" id="name">
+                    <input type="text" placeholder="Фамилия" class="surname" name="f_surname" id="surname">
+                    <input type="text" placeholder="E-mail" class="email" name="f_email" id="email">
                     <input type="text" placeholder="Телефон" class="phone"name="f_phone" id="phone">
 
                     <p class="error" id="error"></p>
@@ -55,7 +55,10 @@
                     <input type="text" placeholder="Имя" class="name s_name" name="s_name">
                     <input type="text" placeholder="Фамилия" class="surname s_surname" name="s_surname">
                     <input type="text" placeholder="E-mail" class="email s_email" name="s_email">
-                    <input type="text" placeholder="Телефон" class="phone s_phone"name="s_phone">
+                    <input type="text" placeholder="Телефон" class="phone s_phone"name="s_phone" id="s_phone">
+
+                    <p class="error error_second" id="s_error"></p>
+
                     <button type="submit" class="center-block sub">Отправить</button>
                 </form>
             </div>
@@ -99,6 +102,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" ntegrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
